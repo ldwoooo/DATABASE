@@ -9,7 +9,7 @@
     <p>
       [{{article.id}}] 
       <a href="{% url 'articles:detail' article.pk %}" id="article-title">{{article.title}}</a>
-      - 작성자: <a href="{% url 'accounts:profile' article.user.username %}">{{article.user}}</a>
+      - 작성자: <a href="{% url 'accounts:profile' article.user.pk %}">{{article.user}}</a>
     </p>
     {% if request.user.is_authenticated %}
       <div>

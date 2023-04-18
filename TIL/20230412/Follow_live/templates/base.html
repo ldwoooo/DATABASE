@@ -23,7 +23,7 @@
         </form>
         <h3 id="user-hello">
           <i>
-            안녕하세요, <a href="{% url 'accounts:profile' user.username %}">{{user}}</a> 님 !
+            안녕하세요, <a href="{% url 'accounts:profile' user.pk %}">{{user}}</a> 님 !
           </i>
         </h3>
       {% else %}
